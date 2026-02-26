@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration | Lab 02</title>
+</head>
+<body>
+    
+    <h1>Student Registration Form</h1>
+        <h3>CS 224L Web Technologies<br>Mr. Mohammad, Lecturer</h3>
+
+        <form action="#" method="post">
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+            <label for="regno">Registration Number:</label>
+            <input type="text" id="regno" name="regno" placeholder="Enter registration number" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+
+            <label for="course">Select Course:</label>
+            <select id="course" name="course" required>
+                <option value="">--Select Course--</option>
+                <option value="cs">Computer Science</option>
+                <option value="it">Information Technology</option>
+                <option value="se">Software Engineering</option>
+                <option value="ce">Computer Engineering</option>
+            </select>
+            <br><br>
+
+            <label>Semester:</label>
+            <div>
+                <label><input type="radio" name="semester" value="1" required> 1st Semester</label>
+                <label><input type="radio" name="semester" value="2"> 2nd Semester</label>
+                <label><input type="radio" name="semester" value="3"> 3rd Semester</label>
+                <label><input type="radio" name="semester" value="4"> 4th Semester</label>
+            </div>
+
+            <div >
+                <label><input type="checkbox" name="terms" required> I agree to the terms and conditions</label>
+            </div>
+
+            <button type="submit">Submit</button>
+
+        </form>
+</body>
+</html>
